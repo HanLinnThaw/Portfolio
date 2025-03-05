@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=playfair:wght@400;700&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/st.css') }}">
+</head>
+<body>
+
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li class="nav-box"><a href="#home">Home</a></li>
+                <li class="nav-box"><a href="#about">About</a></li>
+                <li class="nav-box"><a href="#projects">Projects</a></li>
+                <li class="nav-box"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">☰</div>
+        </nav>
+
+    {% block content %}
+    
+    {% endblock %}
+
+    <footer>
+        <p class="ic1">
+            <a href="https://www.facebook.com/" id="iconlink" class="iconLink">
+              <img src="{{url_for('static',filename='photo/m.png')}}" class="icon11" alt="My Icon" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com/hanlinn_95?igsh=MWV3MnVlZWFoMnE2eg%3D%3D&utm_source=qr" id="iconlink1" class="iconLink">
+              <img src="{{url_for('static',filename='photo/i.png')}}" class="icon11"  alt="My Icon" width="30" height="30">
+            </a>
+            <a href="https://github.com/HanLinnThaw" id="iconlink2" class="iconLink">
+              <img src="{{url_for('static',filename='photo/g.png')}}" class="icon11" alt="My Icon" width="30" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/han-lin-83252833a/" id="iconlink3" class="iconLink">
+              <img src="{{url_for('static',filename='photo/l.png')}}" class="icon11" alt="My Icon" width="30" height="30">
+            </a>
+          </p>
+        <p class="footer">© 2025 Han Linn Thaw. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/portfolio.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/fc596df623.js" crossorigin="anonymous"></script>
+  
+</body>
+</html>
